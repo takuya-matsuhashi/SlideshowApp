@@ -13,6 +13,7 @@
 		5296094225C321540048E397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5296094025C321540048E397 /* Main.storyboard */; };
 		5296094425C321590048E397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5296094325C321590048E397 /* Assets.xcassets */; };
 		5296094725C321590048E397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5296094525C321590048E397 /* LaunchScreen.storyboard */; };
+		5297B30225C830BE005D31CC /* MagnifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5297B30125C830BE005D31CC /* MagnifyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5296094325C321590048E397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5296094625C321590048E397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5296094825C321590048E397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5297B30125C830BE005D31CC /* MagnifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				5296093A25C321540048E397 /* AppDelegate.swift */,
 				5296093C25C321540048E397 /* SceneDelegate.swift */,
 				5296093E25C321540048E397 /* ViewController.swift */,
+				5297B30125C830BE005D31CC /* MagnifyViewController.swift */,
 				5296094025C321540048E397 /* Main.storyboard */,
 				5296094325C321590048E397 /* Assets.xcassets */,
 				5296094525C321590048E397 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5297B30225C830BE005D31CC /* MagnifyViewController.swift in Sources */,
 				5296093F25C321540048E397 /* ViewController.swift in Sources */,
 				5296093B25C321540048E397 /* AppDelegate.swift in Sources */,
 				5296093D25C321540048E397 /* SceneDelegate.swift in Sources */,
