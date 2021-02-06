@@ -55,7 +55,8 @@
                     </view>
                     <connections>
                         <outlet property="imageViewSegue" destination="XWk-kh-cdc" id="Gq5-kg-hsC"/>
-                        <outlet property="magnifysenni" destination="XWk-kh-cdc" id="g2M-6T-pMs"/>
+                        <outlet property="playbutton" destination="PGT-TA-ys4" id="LS3-ka-G56"/>
+                        <segue destination="vev-Aa-dyq" kind="presentation" id="pay-SU-EMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,15 +68,15 @@
             <objects>
                 <viewController id="vev-Aa-dyq" customClass="MagnifyViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4wh-gq-PWb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="198-y7-TB6">
-                                <rect key="frame" x="20" y="44" width="374" height="718"/>
+                                <rect key="frame" x="20" y="44" width="374" height="672"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zJ-sT-Poa">
-                                <rect key="frame" x="83" y="770" width="248" height="79"/>
+                                <rect key="frame" x="83" y="770" width="248" height="45"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -90,6 +91,9 @@
                         <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="XTj-XU-rrN"/>
                     </view>
+                    <connections>
+                        <outlet property="imageview" destination="198-y7-TB6" id="gJr-80-l1C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tNF-hB-6DF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ME8-zl-rqB" userLabel="Exit" sceneMemberID="exit"/>

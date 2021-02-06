@@ -10,9 +10,12 @@ import UIKit
 
 class MagnifyViewController: UIViewController {
 
+    var image: UIImage!
+    @IBOutlet weak var imageview: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageview.image = image
         // Do any additional setup after loading the view.
     }
     
