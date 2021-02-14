@@ -108,6 +108,7 @@ class ViewController: UIViewController {
     @IBAction func tapView(_ sender: Any) {
 
                performSegue(withIdentifier: "toViewController2",sender: nil)
+
     }
     
     @IBAction func back(_ segue: UIStoryboardSegue){
