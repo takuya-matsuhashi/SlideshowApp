@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var returnbutton: UIButton!
+    @IBOutlet weak var nextbutton: UIButton!
     @IBOutlet weak var playbutton: UIButton!
     @IBOutlet weak var imageViewSegue: UIImageView!
     
@@ -50,6 +52,10 @@ class ViewController: UIViewController {
     
     @IBAction func playbutton(_ sender: Any) {
         
+        //UIButtonを無効化
+        nextbutton.isEnabled = false
+        returnbutton.isEnabled = false
+        
         // 再生中か停止しているかを判定
                if (timer == nil) {
                    // 再生時の処理を実装
@@ -69,6 +75,9 @@ class ViewController: UIViewController {
                 // ボタンの名前を再生に直しておく
                     playbutton.setTitle("再生", for: .normal)
                 
+                //UIButtonを有効化
+                    nextbutton.isEnabled = true
+                    returnbutton.isEnabled = true
                 }
 
         
@@ -89,13 +98,18 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
            // segueから遷移先のMagnifyViewControllerを取得する
-        
+            if (segue.identifier == "toViewController2") {
            let magnifyViewController:MagnifyViewController = segue.destination as! MagnifyViewController
         
         magnifyViewController.image = imageViewSegue.image
-
+        }
        }
 
+    @IBAction func tapView(_ sender: Any) {
+
+               performSegue(withIdentifier: "toViewController2",sender: nil)
+    }
+    
     @IBAction func back(_ segue: UIStoryboardSegue){
     }
     
