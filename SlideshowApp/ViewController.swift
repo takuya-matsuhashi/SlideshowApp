@@ -109,9 +109,34 @@ class ViewController: UIViewController {
 
                performSegue(withIdentifier: "toViewController2",sender: nil)
 
+        // 再生中か停止しているかを判定
+               if (timer == nil) {
+                   // 再生時の処理を実装
+
+                   // タイマーをセットする
+                timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+                // ボタンの名前を停止に変える
+                    playbutton.setTitle("停止", for: .normal)
+                
+                
+                } else {
+                         // 停止時の処理を実装
+                         // タイマーを停止する
+                         timer.invalidate()
+                         timer = nil
+                
+                // ボタンの名前を再生に直しておく
+                    playbutton.setTitle("再生", for: .normal)
+                
+                //UIButtonを有効化
+                    nextbutton.isEnabled = true
+                    returnbutton.isEnabled = true
+                }
     }
     
     @IBAction func back(_ segue: UIStoryboardSegue){
+        
+       
     }
     
 }
